@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <title>pop</title>
+</head>
+<body>
+    <button class="popUp">POP</button>
+    <section class="mainBody centt"> 
+        <div class="mainBodyPop centt">
+            <div class="pop centt">
+                <h3>Oops, You do not have enough time left...</h3>
+                <p>In order to watch videos, you will need to recharge your account</p>
+
+                <div>
+                    <button class="filledRoundedFlatBtn">GO TO MONSOOQ</button><br>
+                    <button class="emptyRoundedFlatBtn">CANCEL</button>
+                </div>
+                <span class="material-icons cancel centt">close</span>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        var showPop =   document.querySelector(".mainBodyPop")
+        document.querySelector(".popUp").addEventListener('click',function(){
+            showPop.classList.toggle("displayPop")
+        })
+        document.querySelector(".cancel").addEventListener('click',function(){
+            showPop.classList.remove("displayPop")  
+        })
+    </script>
+</body>
+</html>

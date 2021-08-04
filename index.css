@@ -1,0 +1,85 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.centt{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.mainBody{
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+    width:100%;
+}
+.mainBodyPop{
+    position: absolute;
+    top:40px;
+    left:0px;
+    width:100%;
+    height:100%;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.501);
+    transition:.2s;
+    opacity:0;
+}
+.pop{
+    position: relative;
+    flex-flow: column;
+    width:650px;
+    height:400px;
+    padding:15px 70px;
+    background-color: #fff;
+    border-radius:40px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.pop h3{
+    letter-spacing:1px;
+    font-size:25px;
+    color:rgb(38, 37, 37);
+    margin-bottom:40px;
+}
+
+.pop p{
+    color:rgb(95, 95, 95);
+    font-size:22px;
+    text-align: center;
+}
+.filledRoundedFlatBtn,.emptyRoundedFlatBtn{
+    border:none;
+    border-radius:20px;
+    width:50%;
+    height:45px;
+    min-width:250px;
+    background-color: rgb(10, 10, 10);
+    color:rgb(134, 11, 175);
+    font-weight:bolder;
+    font-size:15px;
+    margin-top:50px;
+    cursor: pointer;
+}
+.emptyRoundedFlatBtn{
+    margin-top:10px;
+    background-color: rgb(255, 255, 255);
+}
+.cancel{
+    position: absolute;
+    top:20px;
+    right:30px;
+    width:25px;
+    height:25px;
+    background-color: rgba(0, 0, 0, 0.364);
+    border-radius:50%;
+    cursor: pointer;
+    font-size:20px !important;
+    display:none
+}
+
+.displayPop{
+    top:0px;
+    visibility:visible;
+    opacity:1;
+}
